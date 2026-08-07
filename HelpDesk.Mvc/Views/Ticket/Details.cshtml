@@ -1,0 +1,55 @@
+@model HelpDesk.Mvc.Models.Ticket
+
+@{
+    ViewData["Title"] = "Ticket Details";
+}
+
+<div class="container mt-4">
+
+    <h2>Ticket Details</h2>
+
+    <table class="table table-bordered">
+
+        <tr>
+            <th>ID</th>
+            <td>@Model.Id</td>
+        </tr>
+
+        <tr>
+            <th>Title</th>
+            <td>@Model.Title</td>
+        </tr>
+
+        <tr>
+            <th>Description</th>
+            <td>@Model.Description</td>
+        </tr>
+
+        <tr>
+            <th>Priority</th>
+            <td>@Model.Priority</td>
+        </tr>
+
+        <tr>
+            <th>Status</th>
+            <td>@Model.Status</td>
+        </tr>
+
+        <tr>
+            <th>Raised By</th>
+            <td>@Model.RaisedBy</td>
+        </tr>
+
+        <tr>
+            <th>Created Date</th>
+            <td>@Model.CreatedDate</td>
+        </tr>
+
+    </table>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Back
+    </a>
+
+</div>
